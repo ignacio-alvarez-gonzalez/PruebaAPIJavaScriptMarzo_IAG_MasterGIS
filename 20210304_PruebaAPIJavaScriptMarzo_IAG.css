@@ -34,7 +34,7 @@ body {
 
 #cabecera {
     height:60px;
-    background-image: url(../images/banner.jpg); background-repeat: repeat-x;
+    background-image: url(./images/banner.jpg); background-repeat: repeat-x;
     margin: 2px;
     border: solid 4px #224a54;
     color:white; 
