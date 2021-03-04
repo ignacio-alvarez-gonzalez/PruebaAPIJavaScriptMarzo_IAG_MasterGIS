@@ -1,0 +1,72 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFF;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mapaPrincipal {
+    height: 100%;
+    /* width: 100%; */
+    margin: 2px;
+    border: solid 4px #224a54;
+}
+
+#conmutador {
+    position: absolute;
+    top: 95px;
+    right: 25px;
+    z-index: 50;
+}
+
+#buscador {
+    position: absolute;
+    top: 225px;
+    left: 75px;
+    z-index: 50;
+}
+
+#cabecera {
+    height:60px;
+    background-image: url(../images/banner.jpg); background-repeat: repeat-x;
+    margin: 2px;
+    border: solid 4px #224a54;
+    color:white; 
+    font-size:18pt; 
+    text-align:left; 
+    font-weight:normal; 
+}
+
+#nombre {
+    font-size: medium;
+    color:white;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#cuadroLeyenda {
+    height:125px;
+    margin: 2px;
+    border: solid 4px #224a54;
+    color:black; 
+    font-size: 10pt; 
+    text-align:left; 
+    font-weight:normal;  
+}
+
+#intervalos {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+#texto {
+    margin-top: 5px;
+    margin-left: 10px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Prueba API JavaScript IAG</title>
+        <link rel="stylesheet" href="https://js.arcgis.com/3.35/esri/css/esri.css">
+        <link rel="stylesheet" href="20210304_PruebaAPIJavaScriptMarzo_IAG.css">
+        <script src="https://js.arcgis.com/3.35/"></script>
+        <script src="20210304_PruebaAPIJavaScriptMarzo_IAG.js"></script>
+    </head>
+    <body>
+        <div id="cabecera">
+            <div id="nombre">
+                MASTERGIS ESRI: PRUEBA FINAL API JAVASCRIPT (04/03/2021)
+                <br>
+                Ignacio J. Álvarez González
+            </div>
+        </div>
+        <div id="cuadroLeyenda">
+            <div id="texto">
+            Las áreas de servicio de los centros de salud se mostrarán automáticamente tras unos segundos. 
+            <br>
+            Puede volver a calcularlas con otros intervalos pulsando en el botón de recalcular.
+            </div>
+            <br>
+            <button style="margin-left: 10px;" id="boton">Recalcular área de servicio</button>
+            <br>
+            <br>
+            <div id="intervalos">
+            <label style="margin-left: 10px;" for="intervalo1">Intervalo 1:</label> <input id="intervalo1" data-dojo-type="dijit/form/TextBox" value=5 />
+            <label style="margin-left: 10px;" for="intervalo2">Intervalo 2:</label> <input id="intervalo2" data-dojo-type="dijit/form/TextBox" value=10 />
+            <label style="margin-left: 10px;" for="intervalo3">Intervalo 3:</label> <input id="intervalo3" data-dojo-type="dijit/form/TextBox" value=15 />
+            </div>
+
+        </div>
+        <div id="mapaPrincipal">
+            <div id="conmutador"></div>
+            <div id="buscador"></div>
+        </div>
+    </body>
+</html>
