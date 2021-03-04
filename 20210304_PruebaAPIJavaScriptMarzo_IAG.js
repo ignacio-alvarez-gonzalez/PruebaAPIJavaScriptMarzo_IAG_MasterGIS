@@ -116,13 +116,15 @@ require([
                 // Indico que la referencia espacial de los polígonos del área de servicio se la misma que la del mapa:
                 parametrosAreaDeServicio.outSpatialReference = miMapa.spatialReference;
                 // Indico que no cargue los puntos de instalaciones en el mapa:
-                parametrosAreaDeServicio.returnFacilities = true;
+                parametrosAreaDeServicio.returnFacilities = false;
 
                 // Indico el primer punto de ruptura:
                 parametrosAreaDeServicio.defaultBreaks= [dojo.byId("intervalo3").value];
 
+                console.log("parametrosAreaDeServicio", parametrosAreaDeServicio);
+
                 // Soluciono el área de servicio:
-                tareaAreaDeServicio.solve(parametrosAreaDeServicio,function(resultado){
+                tareaAreaDeServicio.solve(parametrosAreaDeServicio, function(resultado){
                 console.log("resultados:", resultado);
                 
                 // Creo la simbología para el polígono del primer intervalo, el exterior en este caso:
