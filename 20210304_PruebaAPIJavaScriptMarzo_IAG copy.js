@@ -143,7 +143,34 @@ require([
                 // Indico que no cargue los puntos de instalaciones en el mapa:
                 parametrosAreaDeServicio.returnFacilities = false;
 
-                parametrosAreaDeServicio.travelMode = "Tiempo en coche";
+                parametrosAreaDeServicio.travelMode = {
+                    "name": "Tiempo en coche",
+                    "id": "1",
+                    "type": "AUTOMOBILE",
+                    "description": "Este modo de viaje tiene en cuenta el tiempo en coche como impedancia para calcular la ruta",
+                    "timeAttributeName": "Tiempo_coche",
+                    "distanceAttributeName": "Length",
+                    "impedanceAttributeName": "Tiempo_coche",
+                    "restrictionAttributeNames": [
+                     
+                    ],
+                    "attributeParameterValues": [
+                     {
+                      "attributeName": "ProhibidoCiclomotor",
+                      "parameterName": "Restriction Usage",
+                      "value": "Prohibited"
+                     },
+                     {
+                      "attributeName": "ProhibidoCoches",
+                      "parameterName": "Restriction Usage",
+                      "value": "Prohibited"
+                     }
+                    ],
+                    "useHierarchy": false,
+                    "uturnAtJunctions": "esriNFSBAtDeadEndsAndIntersections",
+                    "simplificationTolerance": null,
+                    "simplificationToleranceUnits": "esriMeters"
+                   };
                 
                 // Indico el primer punto de ruptura:
                 parametrosAreaDeServicio.defaultBreaks= [dojo.byId("intervalo3").value];
